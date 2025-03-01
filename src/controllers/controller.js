@@ -238,7 +238,7 @@ export const updateProfile = async (req, res) => {
 
    let updateUser= await  profile.findOneAndUpdate(
       { userId: userId }, 
-      { $set: { name: name,bio:bio,yogaExp:yogaExp,dailyGoal:dailyGoal,totalYogasnas:totalYogasnas,difficulty:difficulty,imageUrl }},
+      { $set: { name: name,bio:bio,yogaExp:yogaExp,dailyGoal:dailyGoal,totalYogasnas:totalYogasnas,difficulty:difficulty,imageUrl:imageUrl }},
       { returnDocument: "after" } // Returns the updated document
   );
   
