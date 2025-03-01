@@ -14,9 +14,9 @@ import bcrypt from 'bcryptjs'
 export const signup = async (req, res) => {
   try {
 
-    let { name, email, password, mobileNo, confirmPassword,gender } = req.body;
+    let { name, email, password, mobileNo, confirmPassword, gender } = req.body;
 
-    if (!name || !email || !password || !mobileNo || !confirmPassword||!gender) {
+    if (!name || !email || !password || !mobileNo || !confirmPassword || !gender) {
       return res.status(400).json({
         status: "failure",
         message: "All the fields are required",
@@ -71,9 +71,9 @@ export const signup = async (req, res) => {
       name: name,
       email: email,
       mobileNo: mobileNo,
-      gender:gender,
+      gender: gender,
       password: hashedPassword,
-     
+
     }
 
 
@@ -112,6 +112,8 @@ export const login = async (req, res) => {
 
     let Userexists = await User.findOne({ email: email })
 
+    console.log(Userexists)
+
     if (!Userexists) {
       return res.status(200).json({
         status: false,
@@ -121,6 +123,7 @@ export const login = async (req, res) => {
     }
 
     let ResObject = {
+      userId: Userexists._id.toString(),
       name: Userexists.name,
       email: Userexists.email,
       userType: Userexists.userType
@@ -163,23 +166,23 @@ export const login = async (req, res) => {
 
 export const addProfile = async (req, res) => {
   try {
-    const { userId,name, bio, yogaExp, dailyGoal, totalYogasnas } = req.body;
+    const { userId, name, bio, yogaExp, dailyGoal, totalYogasnas } = req.body;
 
-    
-    if (!userId||!name || !bio || !yogaExp || !dailyGoal || !totalYogasnas || !req.file) {
+
+    if (!userId || !name || !bio || !yogaExp || !dailyGoal || !totalYogasnas || !req.file) {
       return res.status(400).json({ status: false, message: "All fields are required!", data: null });
     }
 
-    
+
     console.log("Uploaded File Details:", req.file);
 
 
     const serverUrl = `${req.protocol}://${req.get("host")}`;
     const imageUrl = `${serverUrl}/uploads/${req.file.filename}`;
 
-   
 
-    
+
+
     const profileData = {
       userId,
       name,
@@ -187,10 +190,10 @@ export const addProfile = async (req, res) => {
       yogaExp,
       dailyGoal,
       totalYogasnas,
-      image_url: req.file, 
+      image_url: req.file,
     };
 
-    
+
     const newProfile = await property.create(propertyData);
 
     return res.status(201).json({
