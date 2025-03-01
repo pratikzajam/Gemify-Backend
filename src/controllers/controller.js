@@ -166,7 +166,7 @@ export const login = async (req, res) => {
 
 export const addProfile = async (req, res) => {
   try {
-    const { userId, name, bio, yogaExp, dailyGoal, totalYogasnas } = req.body;
+    const { userId, name, bio, yogaExp, dailyGoal, totalYogasnas,difficulty } = req.body;
 
 
     if (!userId || !name || !bio || !yogaExp || !dailyGoal || !totalYogasnas || !req.file) {
@@ -194,6 +194,7 @@ export const addProfile = async (req, res) => {
       dailyGoal,
       totalYogasnas,
       image_url: imageUrl,
+      difficulty
     };
 
 
