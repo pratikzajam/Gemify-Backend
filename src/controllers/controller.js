@@ -1,9 +1,10 @@
 import express from "express"
 import { Url } from "../models/urlModel.js"
 import { User } from "../models/userModel.js"
-import { property } from "../models/propertyModel.js"
+import { profile } from "../models/profileModel.js"
 import { nanoid } from 'nanoid'
 import bcrypt from 'bcryptjs'
+
 
 
 
@@ -82,7 +83,7 @@ export const signup = async (req, res) => {
       delete userObject.password
 
       return res.status(200).json({
-        status: "success",
+        status: true,
         message: "User created successfully",
         data: userObject,
       });
@@ -160,12 +161,12 @@ export const login = async (req, res) => {
 
 
 
-export const addProperty = async (req, res) => {
+export const addProfile = async (req, res) => {
   try {
-    const { title, address, totalUnits, occupancy, revenue } = req.body;
+    const { userId,name, bio, yogaExp, dailyGoal, totalYogasnas } = req.body;
 
     
-    if (!title || !address || !totalUnits || !occupancy || !revenue || !req.file) {
+    if (!userId||!name || !bio || !yogaExp || !dailyGoal || !totalYogasnas || !req.file) {
       return res.status(400).json({ status: false, message: "All fields are required!", data: null });
     }
 
@@ -179,22 +180,23 @@ export const addProperty = async (req, res) => {
    
 
     
-    const propertyData = {
-      title,
-      address,
-      units:totalUnits,
-      occupancy,
-      revenue,
-      image_url: imageUrl, 
+    const profileData = {
+      userId,
+      name,
+      bio,
+      yogaExp,
+      dailyGoal,
+      totalYogasnas,
+      image_url: req.file, 
     };
 
     
-    const newProperty = await property.create(propertyData);
+    const newProfile = await property.create(propertyData);
 
     return res.status(201).json({
       status: true,
-      message: "Property created successfully!",
-      data: newProperty
+      message: "Profile created successfully!",
+      data: newProfile
     });
 
   } catch (error) {
@@ -203,103 +205,6 @@ export const addProperty = async (req, res) => {
   }
 };
 
-
-export const getProperties = async (req, res) => {
-  try {
-
-    const properties = await property.find().sort({ createdAt: -1 }).exec(); 
-
-
-    if (!properties || properties.length === 0) {
-      return res.status(404).json({ status: false, message: "No properties found", data: [] });
-    }
-
-    return res.status(200).json({
-      status: true,
-      message: "Properties fetched successfully",
-      data: properties,
-    });
-  } catch (error) {
-    console.error("Error fetching properties:", error);
-    res.status(500).json({ status: false, message: "Server error", error: error.message });
-  }
-};
-
-
-export const getPropertyCount = async (req, res) => {
-  try {
-
-    const properties = await property.find().sort({ createdAt: -1 }).exec(); 
-
-
-    if (!properties || properties.length === 0) {
-      return res.status(404).json({ status: false, message: "No properties found", data: [] });
-    }
-
-    return res.status(200).json({
-      status: true,
-      message: "Properties fetched successfully",
-      data: properties,
-    });
-  } catch (error) {
-    console.error("Error fetching properties:", error);
-    res.status(500).json({ status: false, message: "Server error", error: error.message });
-  }
-};
-
-export const getStats = async (req, res) => {
-  try {
-    const properties = await property.find().exec();
-
-    if (!properties || properties.length === 0) {
-      return res.status(404).json({ status: false, message: "No properties found", data: {} });
-    }
-
-    const totalProperties = properties.length;
-    const totalUnits = properties.reduce((sum, prop) => sum + (prop.units || 0), 0);
-    const totalOccupancy = properties.reduce((sum, prop) => sum + (prop.occupancy || 0), 0);
-
-    const averageOccupancy = totalProperties > 0 ? (totalOccupancy / totalProperties).toFixed(2) : 0;
-
-    return res.status(200).json({
-      status: true,
-      message: "Property statistics fetched successfully",
-      data: {
-        totalProperties,
-        totalUnits,
-        averageOccupancy: `${averageOccupancy}%`,
-      },
-    });
-  } catch (error) {
-    console.error("Error fetching property statistics:", error);
-    res.status(500).json({ status: false, message: "Server error", error: error.message });
-  }
-};
-
-export const deleteProperty = async (req, res) => {
-  try {
-    const { id } = req.params; // Get property ID from request parameters
-
-    if (!id) {
-      return res.status(400).json({ status: false, message: "Property ID is required" });
-    }
-
-    const deletedProperty = await property.findByIdAndDelete(id);
-
-    if (!deletedProperty) {
-      return res.status(404).json({ status: false, message: "Property not found" });
-    }
-
-    return res.status(200).json({
-      status: true,
-      message: "Property deleted successfully",
-      data: deletedProperty,
-    });
-  } catch (error) {
-    console.error("Error deleting property:", error);
-    res.status(500).json({ status: false, message: "Server error", error: error.message });
-  }
-};
 
 
 
