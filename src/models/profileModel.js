@@ -12,7 +12,7 @@ const profileSchema = new mongoose.Schema({
   },
 
   bio: {
-    type: Number,
+    type: String,
     required: true,
   },
 

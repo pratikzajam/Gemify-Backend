@@ -190,11 +190,11 @@ export const addProfile = async (req, res) => {
       yogaExp,
       dailyGoal,
       totalYogasnas,
-      image_url: req.file,
+      image_url: imageUrl,
     };
 
 
-    const newProfile = await property.create(propertyData);
+    const newProfile = await profile.create(profileData);
 
     return res.status(201).json({
       status: true,
