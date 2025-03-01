@@ -1,0 +1,333 @@
+{
+  "yogaPoses": [
+    {
+      "id": 1,
+      "title": "Downward-Facing Dog",
+      "sanskritName": "Adho Mukha Svanasana",
+      "difficulty": "beginner",
+      "category": "standing",
+      "description": "This pose energizes and rejuvenates the entire body. It stretches the hamstrings, shoulders, calves, arches, hands, and spine while building strength in the arms, shoulders, and legs. It can help relieve back pain, headaches, and fatigue while increasing circulation throughout the body.",
+      "benefits": [
+        "Strengthens the upper body",
+        "Stretches the hamstrings and calves",
+        "Energizes the body",
+        "Calms the mind",
+        "Relieves back pain"
+      ],
+      "instructions": [
+        "Begin on your hands and knees with wrists under shoulders and knees under hips",
+        "Spread your fingers wide and press firmly through palms and knuckles",
+        "Tuck your toes and lift your knees off the floor",
+        "Slowly lengthen your tailbone away from the back of your pelvis and press it toward the ceiling",
+        "Draw your sitting bones toward the wall behind you",
+        "Gently press your heels toward the floor",
+        "Allow your head to hang freely from your shoulders, ears between your upper arms"
+      ],
+      "contraindications": [
+        "Carpal tunnel syndrome",
+        "Late stages of pregnancy",
+        "High blood pressure",
+        "Headache"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2021/12/Downward-Facing-Dog_Andrew-Clark.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=YqOqM79McYY",
+      "duration": "1-3 minutes"
+    },
+    {
+      "id": 2,
+      "title": "Warrior II",
+      "sanskritName": "Virabhadrasana II",
+      "difficulty": "intermediate",
+      "category": "standing",
+      "description": "This powerful pose builds strength and stamina in the legs, groin, and core. It opens the chest and shoulders while improving focus and concentration. Named after the mythical warrior Virabhadra, this pose embodies strength and power.",
+      "benefits": [
+        "Strengthens legs, ankles, and feet",
+        "Opens hips and groins",
+        "Expands chest and shoulders",
+        "Improves balance and core stability",
+        "Builds mental focus and concentration"
+      ],
+      "instructions": [
+        "Stand with legs 3.5 to 4 feet apart",
+        "Turn right foot out 90 degrees and left foot in 15 degrees",
+        "Align right heel with left arch",
+        "Extend arms parallel to the floor, actively reaching through fingertips",
+        "Bend right knee until thigh is parallel to floor, tracking over ankle",
+        "Turn head to gaze over right fingertips",
+        "Keep shoulders relaxed and directly over hips",
+        "Press outer edge of back foot firmly into the floor"
+      ],
+      "contraindications": [
+        "High blood pressure",
+        "Heart problems",
+        "Recent or chronic hip, knee, or shoulder injuries",
+        "Diarrhea"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2021/12/Warrior-II_Andrew-Clark.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=4Ejz7IgODlU",
+      "duration": "30-60 seconds per side"
+    },
+    {
+      "id": 3,
+      "title": "Tree Pose",
+      "sanskritName": "Vrksasana",
+      "difficulty": "beginner",
+      "category": "standing",
+      "description": "A balancing pose that strengthens the legs and spine while opening the hips, groins, and chest. It improves focus, concentration, and balance while creating a sense of grounding and centeredness.",
+      "benefits": [
+        "Improves balance and stability",
+        "Strengthens thighs, calves, ankles, and spine",
+        "Opens hips and groins",
+        "Builds concentration",
+        "Develops core awareness"
+      ],
+      "instructions": [
+        "Begin standing in Mountain Pose (Tadasana) with feet together",
+        "Shift weight onto left foot and lift right foot off floor",
+        "Place right foot on left inner thigh or calf (avoid pressing directly on knee)",
+        "Find a focal point at eye level to help with balance",
+        "Once balanced, bring palms together at heart center",
+        "Option to raise arms overhead, keeping shoulders relaxed",
+        "Hold for 5-10 breaths, then switch sides"
+      ],
+      "contraindications": [
+        "High or low blood pressure",
+        "Headache",
+        "Insomnia",
+        "Balance problems"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/2hp_290_1721_bjk.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=wdln9qWYloU",
+      "duration": "30-60 seconds per side"
+    },
+    {
+      "id": 4,
+      "title": "Corpse Pose",
+      "sanskritName": "Savasana",
+      "difficulty": "beginner",
+      "category": "supine",
+      "description": "Despite its simplicity, Savasana is considered one of the most challenging yoga poses because it requires complete physical and mental surrender. It deeply relaxes the body and mind, reducing stress, anxiety, and fatigue.",
+      "benefits": [
+        "Completely relaxes the body and mind",
+        "Reduces stress, anxiety, and fatigue",
+        "Lowers blood pressure",
+        "Improves concentration",
+        "Promotes deep rest and rejuvenation"
+      ],
+      "instructions": [
+        "Lie on your back with legs comfortably apart",
+        "Allow feet to fall open to the sides",
+        "Place arms alongside body, slightly away from torso with palms facing up",
+        "Close your eyes and release any tension in your face",
+        "Breathe naturally, allowing the body to become heavy",
+        "Remain still and present, letting go of the urge to move or fidget",
+        "Stay in the pose for 5-15 minutes"
+      ],
+      "contraindications": [
+        "Lower back injury (may need support under knees)",
+        "Pregnancy (after first trimester, lie on left side instead)",
+        "Discomfort lying on back"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/corpsepose.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=7kgZnJqzNaU",
+      "duration": "5-15 minutes"
+    },
+    {
+      "id": 5,
+      "title": "Chair Pose",
+      "sanskritName": "Utkatasana",
+      "difficulty": "intermediate",
+      "category": "standing",
+      "description": "This challenging pose strengthens the entire body while improving balance and posture. It builds heat, stamina, and determination as you hold the position of sitting in an imaginary chair.",
+      "benefits": [
+        "Strengthens thighs, hips, and core",
+        "Stretches shoulders and chest",
+        "Stimulates abdominal organs, heart, and diaphragm",
+        "Builds heat and energy in the body",
+        "Improves balance and posture"
+      ],
+      "instructions": [
+        "Start in Mountain Pose with feet together or hip-width apart",
+        "Bend knees and lower hips as if sitting in a chair",
+        "Keep weight in heels - you should be able to wiggle toes",
+        "Reach arms overhead, palms facing each other or together",
+        "Draw tailbone down and in while lifting chest",
+        "Keep knees tracking over ankles, not pushing beyond toes",
+        "Engage core and breathe deeply"
+      ],
+      "contraindications": [
+        "Low blood pressure",
+        "Headache",
+        "Insomnia",
+        "Knee or ankle injuries"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/32hp_290_1721_bjk.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=laxF-YdPpuU",
+      "duration": "30-60 seconds"
+    },
+    {
+      "id": 6,
+      "title": "Pigeon Pose",
+      "sanskritName": "Eka Pada Rajakapotasana",
+      "difficulty": "intermediate",
+      "category": "hip opener",
+      "description": "One of the most effective hip openers in yoga. This pose stretches the deep external rotators, piriformis, and psoas while relieving sciatic pain. It can release deep-seated tension and emotion stored in the hips.",
+      "benefits": [
+        "Opens hip flexors and rotators",
+        "Stretches the iliopsoas muscle",
+        "Relieves sciatic pain",
+        "Stimulates internal organs",
+        "Releases tension and stored emotions"
+      ],
+      "instructions": [
+        "From Downward-Facing Dog, bring right knee behind right wrist",
+        "Place right ankle in front of left hip",
+        "Extend left leg straight back, keeping hips square",
+        "For a deeper stretch, fold forward over right leg",
+        "Keep weight evenly distributed between hips",
+        "Hold for 5-10 breaths, then switch sides",
+        "For more intensity, bend back leg and hold foot with hand in Full Pigeon"
+      ],
+      "contraindications": [
+        "Knee injuries",
+        "Ankle problems",
+        "Sacroiliac issues"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/pigeon-pose-eka-pada-rajakapotasana.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=FVXPp1_ryn8",
+      "duration": "1-3 minutes per side"
+    },
+    {
+      "id": 7,
+      "title": "Camel Pose",
+      "sanskritName": "Ustrasana",
+      "difficulty": "intermediate",
+      "category": "backbend",
+      "description": "A deep backbend that opens the entire front body, stretching the chest, abdomen, quadriceps, and hip flexors. It stimulates the nervous system and energizes the body.",
+      "benefits": [
+        "Opens chest, shoulders, and hip flexors",
+        "Stretches the entire front of the body",
+        "Strengthens back muscles",
+        "Improves posture and counteracts slouching",
+        "Stimulates thyroid and adrenal glands"
+      ],
+      "instructions": [
+        "Kneel with knees hip-width apart, thighs perpendicular to the floor",
+        "Place hands on lower back, fingers pointing down",
+        "Engage thighs and press hips forward",
+        "Lift chest and arch upper back",
+        "For full expression, reach back and hold heels",
+        "Keep neck in neutral position or gently release head back",
+        "To exit, bring hands to back for support and slowly return to upright"
+      ],
+      "contraindications": [
+        "High or low blood pressure",
+        "Migraine",
+        "Insomnia",
+        "Serious low back or neck injury"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/camel-pose-ustrasana.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=HC7-yli4v4Y",
+      "duration": "30-60 seconds"
+    },
+    {
+      "id": 8,
+      "title": "Seated Forward Bend",
+      "sanskritName": "Paschimottanasana",
+      "difficulty": "beginner",
+      "category": "seated",
+      "description": "A classic seated forward fold that deeply stretches the entire back of the body from the heels to the neck. It calms the mind and nervous system, providing relief from stress and mild depression.",
+      "benefits": [
+        "Stretches hamstrings, spine, and shoulders",
+        "Calms the brain and helps relieve stress",
+        "Stimulates liver, kidneys, ovaries, and uterus",
+        "Improves digestion",
+        "Soothes headache and anxiety"
+      ],
+      "instructions": [
+        "Sit with legs extended forward",
+        "Inhale, lengthen spine and reach arms up",
+        "Exhale and hinge from hips to fold forward",
+        "Hold onto legs, feet, or use a strap around feet",
+        "Focus on leading with chest rather than rounding forward",
+        "Allow head to relax toward legs",
+        "For deeper pose, use exhalations to fold further, keeping spine long"
+      ],
+      "contraindications": [
+        "Asthma",
+        "Diarrhea",
+        "Back injury",
+        "Pregnancy"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/forwardbend.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=T8sgVyF4Ux4",
+      "duration": "1-3 minutes"
+    },
+    {
+      "id": 9,
+      "title": "Bridge Pose",
+      "sanskritName": "Setu Bandha Sarvangasana",
+      "difficulty": "beginner",
+      "category": "backbend",
+      "description": "A gentle backbend that strengthens the spine, opens the chest, and stimulates the nervous system. It's therapeutic for stress, fatigue, and mild depression.",
+      "benefits": [
+        "Strengthens back, glutes, and hamstrings",
+        "Opens chest, heart, and shoulders",
+        "Stimulates thyroid and lungs",
+        "Improves circulation",
+        "Calms the mind and reduces anxiety"
+      ],
+      "instructions": [
+        "Lie on your back with knees bent, feet hip-width apart",
+        "Place feet flat on floor, close to sitting bones",
+        "Rest arms alongside body, palms down",
+        "Press feet and arms into floor to lift hips",
+        "Roll shoulders under and interlace fingers below hips",
+        "Keep thighs and feet parallel",
+        "Lift hips higher while keeping knees over ankles"
+      ],
+      "contraindications": [
+        "Neck injury",
+        "Shoulder problems",
+        "Headache"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/bridge-pose-setu-bandha-sarvangasana.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=NnbvPeAIhmA",
+      "duration": "30-60 seconds"
+    },
+    {
+      "id": 10,
+      "title": "Crow Pose",
+      "sanskritName": "Bakasana",
+      "difficulty": "advanced",
+      "category": "arm balance",
+      "description": "A foundational arm balance that builds upper body strength, core stability, and confidence. It requires focus, balance, and strength while teaching the practitioner to overcome fear.",
+      "benefits": [
+        "Strengthens arms, wrists, and core",
+        "Improves balance and focus",
+        "Tones abdominal muscles",
+        "Opens upper back",
+        "Builds confidence"
+      ],
+      "instructions": [
+        "Start in a squat with feet close together",
+        "Place hands shoulder-width apart on the mat",
+        "Bend elbows slightly and place knees on backs of upper arms",
+        "Lean forward, shifting weight onto hands",
+        "Lift one foot, then the other off the floor",
+        "Keep gaze slightly forward, not down",
+        "Engage core and round upper back",
+        "Work toward straightening arms"
+      ],
+      "contraindications": [
+        "Wrist, elbow, or shoulder injury",
+        "Carpal tunnel syndrome",
+        "Pregnancy",
+        "Recent abdominal surgery"
+      ],
+      "imageUrl": "https://www.yogajournal.com/wp-content/uploads/2007/08/bakasana-crow-pose.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=BiYDk05XWQI",
+      "duration": "15-30 seconds"
+    }
+  ]
+}
