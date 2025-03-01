@@ -174,6 +174,9 @@ export const addProfile = async (req, res) => {
     }
 
 
+
+
+
     console.log("Uploaded File Details:", req.file);
 
 
@@ -210,4 +213,32 @@ export const addProfile = async (req, res) => {
 
 
 
+export const getProfile = async (req, res) => {
+  try {
+    const { userId } = req.body;
+
+
+    if (!userId ) {
+      return res.status(400).json({ status: false, message: "All fields are required!", data: null });
+    }
+
+
+    let ProfileDetails=await profile.findOne({ userId: userId })
+
+
+    console.log(ProfileDetails)
+
+
+   
+    return res.status(201).json({
+      status: true,
+      message: "Profile data fetched sucessfully!",
+      data: ProfileDetails
+    });
+
+  } catch (error) {
+    console.error("Error creating property:", error);
+    res.status(500).json({ status: false, message: "Server error", error: error.message });
+  }
+};
 
